@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deploying Art Everywhere</title>
   <style>
-    /* Reset default browser styles */
+    
     /* --- Layout / base --- */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  /* Fallback (shows while image loads) */
+  /* Fallback */
   background: linear-gradient(to right, #41295a, #2f0743);
   color: #ffffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-  /* Make the background layers work */
+  /* background layers work */
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -40,7 +40,7 @@ body::before {
   will-change: transform, filter;
 }
 
-/* --- Optional extra soft overlay (subtle vignette) --- */
+/* --- extra soft overlay (subtle vignette) --- */
 body::after {
   content: "";
   position: absolute; inset: 0;
@@ -55,7 +55,7 @@ body::after {
   z-index: 1;
 }
 
-/* Premium heading (your original gradient text) */
+/* heading */
 h1 {
   font-size: clamp(2rem, 3.8vw, 3.2rem);
   margin-bottom: 1rem;
@@ -73,7 +73,7 @@ p {
   max-width: 60ch;
 }
 
-/* Premium button (your original gradient button) */
+/* (gradient button) */
 a.cta {
   display: inline-block;
   padding: 12px 24px;
@@ -89,6 +89,7 @@ a.cta {
 a.cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(229,46,113,0.35);
+}
 }
 
 /* Footer */
