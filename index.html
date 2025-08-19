@@ -67,6 +67,7 @@ h1 {
   margin-bottom: 1rem;
   line-height: 1.15;
   color: #e5e5e5; /* soft silver */
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* soft shadow */
 }
 
 /* Body copy */
@@ -81,19 +82,21 @@ p {
 a.cta {
   display: inline-block;
   padding: 12px 28px;
-  border-radius: 10px;
+  border-radius: 30px;
   text-decoration: none;
-  background: #1e1e1e; /* deep black */
-  color: #e0e0e0; /* light silver */
+  background: rgba(255, 255, 255, 0.15); /* glassy white */
+  color: #ffffff; /* light silver */
+  backdrop-filter: blur(10px); /* glass effect */
   font-weight: 600;
   letter-spacing: 0.2px;
+  border: 1px solid #333;
   box-shadow: 0 4px 12px rgba(0,0,0,0.6);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 a.cta:hover {
   transform: scale(1.1);
-  background: #292929;
+  background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
 }
 
